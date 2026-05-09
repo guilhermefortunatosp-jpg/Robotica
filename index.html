@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Robótica 3°CPM</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+    setTimeout(function() {
+    const img = document.getElementById('imageminicial');
+    if (img) img.style.display = 'block';
+}, 4000);
+setTimeout(function() {
+  document.getElementById('titulo').classList.add('aparecer');
+}, 3500); 
+    </script>
 </head>
 <body>
-    <img id="imageminicial" src="Captura de tela de 2026-05-09 00-27-26.png" alt="Imagem inicial">
-    <video width="640" height="360" controls poster="capa.jpg">
-    <source src="Untitled Project - AI Video board (1).mp4" type="video/mp4">
-</video>
+    <div class="bg">
+        <video id="bg-video" class="bg__video" autoplay loop muted playsinline>
+            <source src="Untitled Project - AI Video board (1).mp4" type="video/mp4">
+        </video>
+        <img id="imageminicial" class="bg__overlay" src="Captura de tela de 2026-05-09 00-27-26.png" alt="Imagem inicial">
+        <div class="landing-space"></div>
+    </div>
+    <h1 id="titulo" class="titulo">Robótica</h1>
 </body>
 </html>

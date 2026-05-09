@@ -1,3 +1,5 @@
 setTimeout(function() {
-            document.getElementById('imgeminicial').style.display = 'block';
-        }, 5000); // 5000 milissegundos = 5 segundos
+  const img = document.getElementById('imageminicial');
+  if (img) img.style.display = 'block';
+}, 4000);
+

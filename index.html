@@ -9,13 +9,28 @@
     setTimeout(function() {
     const img = document.getElementById('imageminicial');
     if (img) img.style.display = 'block';
-}, 4000);
-setTimeout(function() {
-  document.getElementById('titulo').classList.add('aparecer');
-}, 3500); 
+    }, 4000);
+    setTimeout(function() {
+    document.getElementById('titulo').classList.add('aparecer');
+    }, 3500); 
+    setTimeout(function() {
+    document.getElementById('subtitulo').classList.add('aparecer');
+    }, 3500); 
     </script>
 </head>
 <body>
+    <header>
+    <div class="nav">
+        <img src="image-removebg-preview (4).png" alt="logo">
+    <ul class="navbar">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Professores</a></li>
+        <li><a href="#">Calendario escolar</a></li>
+    </ul>
+    </div>
+    </header>
+
     <div class="bg">
         <video id="bg-video" class="bg__video" autoplay loop muted playsinline>
             <source src="Untitled Project - AI Video board (1).mp4" type="video/mp4">
@@ -24,5 +39,7 @@ setTimeout(function() {
         <div class="landing-space"></div>
     </div>
     <h1 id="titulo" class="titulo">Robótica</h1>
+    <p id="subtitulo">Onde a disciplina encontra a inovação
+        <br> formando os engenheiros e programadores do amanhã.</p>
 </body>
 </html>

@@ -92,7 +92,7 @@ header {
 
 .titulo {
     position: fixed;
-    top: 350px;
+    top: 300px;
     left: 60px;
     transform: none;
     z-index: 3;
@@ -112,7 +112,7 @@ header {
 
 .subtitulo {
     position: fixed;
-    top: 440px;
+    top: 390px;
     left: 60px;
     transform: none;
     z-index: 3;

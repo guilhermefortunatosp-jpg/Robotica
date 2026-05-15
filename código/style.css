@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+.bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+:root {
+    --nav-height: 80px;
+}
+
+
+.bg__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: calc(100% - var(--nav-height));
+    object-fit: cover;
+    top: var(--nav-height);
+}
+
+
+.bg__overlay {
+    position: absolute;
+    left: 0;
+    top: var(--nav-height);
+    width: 100%;
+    height: calc(100% - var(--nav-height));
+    object-fit: cover;
+    display: none;
+    z-index: 1;
+}
+
+
+.landing-space {
+    height: var(--nav-height);
+}
+
+
+
+.aparecer {
+    opacity: 1 !important;
+}
